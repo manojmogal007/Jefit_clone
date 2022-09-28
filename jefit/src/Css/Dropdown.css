@@ -1,0 +1,22 @@
+
+.item{
+  background: rgb(0,212,212);
+  cursor: pointer;
+  background-color:#0693e3;
+  padding: 10px;
+  font-size: 19px;
+  color: white;
+}
+
+.hover-button:hover + .dropdown {
+   
+    display:inherit; 
+   }
+.dropdown {
+    display:none; 
+    width: 200px;
+}
+.hover-button{
+    color: white;
+    font-size: 19px;
+}
