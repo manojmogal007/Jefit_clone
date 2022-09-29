@@ -49,6 +49,11 @@ export default function Navbar(){
                         <Button colorScheme='none' fontSize='19' color='white'>Login</Button>
                     {/* </Link> */}
                 </Box>    
+                <Box mx={10} >
+                    <Link to='/signup'>
+                        <Button px={8} sx={{color:'#00008B' ,backgroundColor:'white'}} _hover={{color:'white' ,backgroundColor:'#00008B'}} fontSize='19'>Sign Up</Button>
+                    </Link>
+                </Box>    
             </Flex>
             </Center>
         </Box >

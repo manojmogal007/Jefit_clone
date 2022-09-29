@@ -1,12 +1,11 @@
-import {Routes,Route} from '@chakra-ui/react'
-
+import {Routes,Route} from 'react-router-dom'
+import Signup from '../Pages/Signup'
 
 export default function AllRoutes(){
 
     return(
         <Routes>
-            <Route></Route>
-            
+            <Route path="/signup" element={<Signup/>}></Route>
         </Routes>
     )
 }
