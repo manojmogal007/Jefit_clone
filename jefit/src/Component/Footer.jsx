@@ -5,7 +5,7 @@ export default function Footer(){
 
     return(
         <Box pb={200} bg='#F8F8FF' pt={20}>
-            <p>footer</p>
+            {/* <p>footer</p> */}
             <Box w='70%' m='auto' sx={{display:'flex',justifyContent:'space-between'}}>
                
                     <Box sx={{textAlign:'left'}} >
