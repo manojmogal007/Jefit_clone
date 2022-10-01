@@ -1,6 +1,7 @@
 import {Image,Box,Spacer,Text,Flex, Select, Center,Button,VStack, Heading} from '@chakra-ui/react'
 import Dropdown from './Dropdown'
-import {Link} from 'react-router-dom'
+import {Link,Redirect,NavLink,useNavigate} from 'react-router-dom'
+import Login from '../Pages/Login'
 
 
 
@@ -8,6 +9,10 @@ const app=['Workout App (iOS)','Workout App (Android)']
 const plan=['Pro-designd Plans','Create My Plane']
 const section=[]
 export default function Navbar(){
+    const navigate=useNavigate()
+    // const tologin=()=>{
+    //     navigate('/login')
+    // }
 
     return(
         <Center>
@@ -25,34 +30,35 @@ export default function Navbar(){
                     <Dropdown value={plan} title='Workout Plans'/>
                 </Box>
                 <Box mx={10}  my={2}>
-                    {/* <Link to='/'> */}
+                    <Link to='/'>
                         <Text fontSize='19' color='white'>Exercise Guide</Text>
-                    {/* </Link> */}
+                    </Link>
                 </Box>
                 <Box mx={10}  my={2}>
-                    {/* <Link to='/'> */}
+                    <Link to='/'>
                         <Text fontSize='19' color='white'>Blog</Text>
-                    {/* </Link> */}
+                    </Link>
                 </Box>
                 <Box mx={10} my={2}>
-                    {/* <Link to='/'> */}
+                    <Link to='/'>
                         <Text fontSize='19' color='white'>Coach</Text>
-                    {/* </Link> */}
+                    </Link>
                 </Box>
                 <Box mx={10}  my={2}>
-                    {/* <Link to='/'> */}
+                    <Link to='/'>
                         <Text fontSize='19' color='white'>Elite</Text>
-                    {/* </Link> */}
+                    </Link>
                 </Box>    
                 <Box mx={10} >
-                    {/* <Link to='/'> */}
+                    <Link to='/login'>
                         <Button colorScheme='none' fontSize='19' color='white'>Login</Button>
-                    {/* </Link> */}
+                    </Link>
                 </Box>    
                 <Box mx={10} >
-                    <Link to='/signup'>
+                    <Link to="/signup">
                         <Button px={8} sx={{color:'#00008B' ,backgroundColor:'white'}} _hover={{color:'white' ,backgroundColor:'#00008B'}} fontSize='19'>Sign Up</Button>
                     </Link>
+                    
                 </Box>    
             </Flex>
             </Center>

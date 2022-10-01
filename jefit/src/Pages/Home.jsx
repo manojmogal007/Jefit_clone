@@ -3,6 +3,7 @@ import {Image,Box,Spacer,Text,Flex, Select, Center,Button,VStack, Heading, backg
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {Link} from 'react-router-dom'
 import Footer from "../Component/Footer";
+import AllRoutes from '../Component/AllRoutes';
 
 const nohover={color:'white', bg:'#39B7FF'}
 const hstyle={color:'#39B7FF', bg:'white',border:'1px solid #39B7FF'}
@@ -14,7 +15,6 @@ return(
             <Box>
                 <Navbar/>
             </Box>
-
             <Box>
                 <Box bgColor='#00008B' pb={50}>
             <Flex>
@@ -201,7 +201,9 @@ return(
             <Box>
                 <Footer/>
             </Box>
+           
         </Box>
+        {/* <Box> <AllRoutes/></Box> */}
         
         
         
