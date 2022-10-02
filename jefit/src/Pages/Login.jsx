@@ -1,6 +1,6 @@
 import {Box,Text,Image,Heading, FormControl, FormLabel, Input, Button} from '@chakra-ui/react'
 import { useState } from 'react'
-import { Navigate } from 'react-router-dom'
+import { Navigate ,Link} from 'react-router-dom'
 const  ldata ={username:'',password:''}
 export default function Login(){
     const [login,setlogin]=useState(ldata)
@@ -53,7 +53,10 @@ export default function Login(){
                     <Box h={16} w={16}  sx={{display:'flex',justifyContent:'center',alignItems:'center',bg:'white',borderRadius:'10px'}}>
                         <Image h='50%' src='https://tse1.mm.bing.net/th?id=OIP.kHKjQTsIsIbI3ZRwFIxRfwHaHa&pid=Api&P=0'></Image>
                     </Box>
+                   
                 </Box>
+                <Text mt={10} >New to JEFIT?
+                <Link to='/signup'>Create an account</Link></Text>
             </Box>
         </Box>
     )

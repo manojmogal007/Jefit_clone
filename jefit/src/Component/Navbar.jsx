@@ -21,7 +21,9 @@ export default function Navbar(){
             <Center>
             <Flex>
                 <Box w={130}  my={2}>
-                    <Image w='100%' src='https://www.jefit.com/wp/wp-content/uploads/2017/07/cropped-logo_155_40_white-150x40.webp'/>
+                    <Link to='/'>
+                        <Image w='100%' src='https://www.jefit.com/wp/wp-content/uploads/2017/07/cropped-logo_155_40_white-150x40.webp'/>
+                    </Link>
                 </Box>
                 <Box  my={2}>
                    <Dropdown value={app} title='Get Jefit App'/>
@@ -40,7 +42,7 @@ export default function Navbar(){
                     </Link>
                 </Box>
                 <Box mx={10} my={2}>
-                    <Link to='/'>
+                    <Link to='/coach'>
                         <Text fontSize='19' color='white'>Coach</Text>
                     </Link>
                 </Box>

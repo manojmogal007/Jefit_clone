@@ -84,7 +84,10 @@ return(
                     <Text fontSize='xl' sx={{fontWeight:'500'}}>Support custom exercises</Text>
                     <Text fontSize='xl' sx={{fontWeight:'500'}}>Flexible workout planning tool</Text>
                     </Stack>
-                    <Button mt={7} w={220} p={6} borderRadius='full' sx={{ bg: '#39B7FF',color:'white',border:'1px solid #39B7FF' }} _hover={{ bg: 'white',color:'#39B7FF',border:'1px solid #39B7FF' }}>JOIN NOW</Button>                </Box>
+                    <Link to='/signup'>
+                    <Button mt={7} w={220} p={6} borderRadius='full' sx={{ bg: '#39B7FF',color:'white',border:'1px solid #39B7FF' }} _hover={{ bg: 'white',color:'#39B7FF',border:'1px solid #39B7FF' }}>JOIN NOW</Button>                
+                    </Link>
+                    </Box>
                 </Center>
                 </Flex> 
             </Box>
@@ -100,7 +103,9 @@ return(
                     <Text fontSize='xl' sx={{fontWeight:'500'}}>Available on mobile and watch</Text>
                     <Text fontSize='xl' sx={{fontWeight:'500'}}>Audio and video instructions</Text>
                     </Stack>
-                    <Button mt={7} w={220} p={6} borderRadius='full' sx={{ bg: '#39B7FF',color:'white',border:'1px solid #39B7FF' }} _hover={{ bg: 'white',color:'#39B7FF',border:'1px solid #39B7FF' }}>JOIN NOW</Button>                </Box>
+                    <Link to='/signup'>
+                    <Button mt={7} w={220} p={6} borderRadius='full' sx={{ bg: '#39B7FF',color:'white',border:'1px solid #39B7FF' }} _hover={{ bg: 'white',color:'#39B7FF',border:'1px solid #39B7FF' }}>JOIN NOW</Button>                
+                    </Link>                    </Box>
                 <Box w='40%' >
                     <Image src='https://www.jefit.com/wp/wp-content/uploads/2022/08/web2.png'></Image>
                 </Box>
@@ -123,8 +128,10 @@ return(
                     <Text fontSize='xl' sx={{fontWeight:'500'}}>Understand muscle recovery rate</Text>
                     <Text fontSize='xl' sx={{fontWeight:'500'}}>Set 1RM goals and refresh records</Text>
                     </Stack>
-                    <Button mt={7} w={220} p={6} borderRadius='full' sx={{ bg: '#39B7FF',color:'white',border:'1px solid #39B7FF' }} _hover={{ bg: 'white',color:'#39B7FF',border:'1px solid #39B7FF' }}>JOIN NOW</Button>
-                </Box>
+                    <Link to='/signup'>
+                    <Button mt={7} w={220} p={6} borderRadius='full' sx={{ bg: '#39B7FF',color:'white',border:'1px solid #39B7FF' }} _hover={{ bg: 'white',color:'#39B7FF',border:'1px solid #39B7FF' }}>JOIN NOW</Button>                
+                    </Link>                
+                    </Box>
                 </Center>
                 </Flex>
             </Box>

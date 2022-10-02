@@ -1,6 +1,6 @@
 import {Box,Text,Image,Heading, FormControl, FormLabel, Input, Button} from '@chakra-ui/react'
 import {useState} from 'react'
-import {Navigate} from 'react-router-dom'
+import {Navigate,Link} from 'react-router-dom'
 const initial={username:"",email:"",password:""}
 export default function Signup(){
     const [userdata,setuserdata]=useState(initial)
@@ -56,7 +56,8 @@ export default function Signup(){
                    <Button onClick={handleclick} mt={5} w='full' borderRadius='full' color='white' bg='#0693e3'> CREATE ACCOUNT</Button>
                 </FormControl>
                 </Box>
-                <Text>Already a member?</Text>
+                <Text mt={10} >Already a member?
+                <Link to='/login'>Sign up</Link></Text>
             </Box>
         </Box>
     )
