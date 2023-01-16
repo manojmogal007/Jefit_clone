@@ -5,6 +5,8 @@
 ---
 Jefit gym &amp; workout app is a workout tracker for planning and logging your training, tracking your weights. Tried to clone exact UI and responsiveness
 
+## Tech Stack
+
    ```
    Frontend : React JS, Chakra-UI
    
